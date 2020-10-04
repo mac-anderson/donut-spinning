@@ -56,8 +56,8 @@ int main()
         const int FRAME_HEIGHT = 25;
         const int FRAME_WIDTH = 25;
         //
-        const double Y_AXIS_SPEED = 0.031415;
-        const double Z_AXIS_SPEED = 0.031415;
+        const double Y_AXIS_SPEED = 0.07;
+        const double Z_AXIS_SPEED = 0.03;
         const double FRAME_LENGTH_SECONDS = 0.02;
         //should be greater than 1, smaller values cause more distortion.
         //I recommend about 2.
@@ -129,7 +129,7 @@ int main()
 
 
                                 //calculating the light value
-                                light = round((0*cosRadY*cosRadZ*cosu*cosv+0*sinRadZ*sinu*cosv+sinRadY*cosRadZ*sinv/*<-x */ \
+                                light = round((0.4*cosRadY*cosRadZ*cosu*cosv+0.4*sinRadZ*sinu*cosv+sinRadY*cosRadZ*sinv/*<-x */ \
                                 +cosRadY*sinRadZ*cosu*cosv-cosRadZ*sinu*cosv+sinRadY*sinRadZ*sinv/*<-y */\
                                 +cosRadY*sinv-sinRadY*cosu*cosv+1.8)/3.4*8);
                                 //Where components "land" after rotation.
