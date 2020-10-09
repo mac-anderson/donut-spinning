@@ -57,8 +57,8 @@ int main()
 	const int FRAME_HEIGHT = 40;
 	const int FRAME_WIDTH = 40;
 	//
-	const double Y_AXIS_SPEED = 0.03;
-	const double Z_AXIS_SPEED = 0.04;
+	const double Y_AXIS_SPEED = 0.7;
+	const double Z_AXIS_SPEED = 0.4;
 	const double FRAME_LENGTH_SECONDS = 0.05;
 	//should be greater than 1, smaller values cause more distortion.
 	//I recommend about 2.
@@ -180,8 +180,8 @@ int main()
 		
 		
 		//increment rotations
-		radiansY+=Y_AXIS_SPEED;
-		radiansZ+=Z_AXIS_SPEED;
+		radiansY+=Y_AXIS_SPEED*FRAME_LENGTH_SECONDS;
+		radiansZ+=Z_AXIS_SPEED*FRAME_LENGTH_SECONDS;
 		//sleep for frame length
 		sleep(FRAME_LENGTH_SECONDS);
 		//next frame...
