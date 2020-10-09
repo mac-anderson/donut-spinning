@@ -179,7 +179,9 @@ int main()
 		}
 		
 		
-		//increment rotations
+		//increment rotations,
+		//axis speed values should be measured in radians per second, so we wil multiply by
+		//the time interval to get the change in angle.
 		radiansY+=Y_AXIS_SPEED*FRAME_LENGTH_SECONDS;
 		radiansZ+=Z_AXIS_SPEED*FRAME_LENGTH_SECONDS;
 		//sleep for frame length
