@@ -54,15 +54,15 @@ int main()
 	const double LITTLE_RADIUS = 5;
 	//note that because each 'pixel' actually takes *two* 
 	//characters you may need to double your window's width.
-	const int FRAME_HEIGHT = 32;
-	const int FRAME_WIDTH = 32;
+	const int FRAME_HEIGHT = 40;
+	const int FRAME_WIDTH = 40;
 	//
 	const double Y_AXIS_SPEED = 0.03;
 	const double Z_AXIS_SPEED = 0.04;
 	const double FRAME_LENGTH_SECONDS = 0.05;
 	//should be greater than 1, smaller values cause more distortion.
 	//I recommend about 2.
-	const double PERSPECTIVE_NUMBER = 200;
+	const double PERSPECTIVE_NUMBER = 2;
 	//
 	//darkness of non-frosted area increases with contrast.
 	const double CONTRAST = 1.5;
